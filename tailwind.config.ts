@@ -23,8 +23,8 @@ const config: Config = {
         border: '#1E1E1E',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['var(--font-instrument-serif)', 'Georgia', 'serif'],
+        sans: ['var(--font-mono)', 'JetBrains Mono', 'Fira Code', 'Source Code Pro', 'monospace'],
+        mono: ['var(--font-mono)', 'JetBrains Mono', 'Fira Code', 'Source Code Pro', 'monospace'],
       },
     },
   },

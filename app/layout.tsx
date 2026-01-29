@@ -1,21 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { Instrument_Serif } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 
-const inter = Inter({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-mono',
   display: 'swap',
   preload: true,
-})
-
-const instrumentSerif = Instrument_Serif({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-instrument-serif',
-  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -74,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="de" className={`${inter.variable} ${instrumentSerif.variable}`}>
+    <html lang="de" className={`${jetbrainsMono.variable}`}>
       <head>
         <script
           type="application/ld+json"
